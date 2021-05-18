@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 lcol-md-6 col-sm-6 mt-4" *ngFor="let skill of skills"> 
+            <div class="card" style="width: 100%;">
+                <!-- <img [src]="skill.image" class="card-img-top" [alt]="skill.name"> -->
+                <div class="d-flex justify-content-center">
+                    <fa-icon [icon]="['fab', skill.icon]" style="font-size: 64px;"></fa-icon>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ skill.name }}</h5>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" [style.width]="skill.porcent + '%'" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,26 @@
+nav { 
+    display: none;
+}
+
+
+.navbar-scroll-top {
+    /* display: none; */
+    background-color: transparent !important;
+    transition: 0.5s;
+}
+
+.navbar-brand {
+    color: #212529 !important;
+}
+
+
+.navbar-scroll-button {
+    background-color: #212529 !important;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block
+    }
+}
